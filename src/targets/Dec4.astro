@@ -1,0 +1,62 @@
+<section>
+    <section class="circle uno big">
+        <section class="circle uno">
+            <div class="circle dos"></div>
+        </section>
+        <div class="sqr"></div>
+        <div class="sqr sqr2"></div>
+    </section>
+</section>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        background: #e0e7ff;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sqr {
+        background: red;
+        width: 50px;
+        height: 80px;
+        right: 0px;
+        position: absolute;
+        background: #e0e7ff;
+    }
+
+    .sqr2 {
+        right: 50px;
+        height: 40px;
+    }
+
+    .circle {
+        border-radius: 50%;
+    }
+
+    .uno {
+        width: 180px;
+        height: 180px;
+        background: #4f77ff;
+        border: 10px solid #e0e7ff;
+    }
+
+    .dos {
+        background: #e0e7ff;
+        width: 100px;
+        height: 100px;
+    }
+
+    .big {
+        background: #4f77ff;
+        width: 280px;
+        height: 280px;
+        position: relative;
+    }
+</style>

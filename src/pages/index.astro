@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Nov29 from "../targets/Nov29.astro";
+import Dec3 from "../targets/Dec3.astro";
+import Dec4 from "../targets/Dec4.astro";
+import Dec5 from "../targets/Dec5.astro";
+import Dec6 from "../targets/Dec6.astro";
+
+const listTargets = [
+	{
+		title: "Noviembre 29",
+		Desing: Nov29,
+	},
+	{
+		title: "Diciembre 3",
+		Desing: Dec3,
+	},
+	{
+		title: "Diciembre 4",
+		Desing: Dec4,
+	},
+	{
+		title: "Diciembre 5",
+		Desing: Dec5,
+	},
+	{
+		title: "Diciembre 6",
+		Desing: Dec6,
+	},
+];
+---
+
+<Layout>
+	<main>
+		<h1>CSS Battle</h1>
+		<section>
+			{
+				listTargets.map((target, index) => (
+					<Card key={index} {...target} />
+				))
+			}
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main{
+		max-width: 1700px;
+		margin: 20px auto;
+		padding: 20px;
+	}
+	section {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		padding: 20px 0px;
+	}
+</style>

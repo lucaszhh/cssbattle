@@ -1,72 +1,70 @@
 <article>
-  
   <section>
     <div></div>
-    <div class="bottom"></></div>
-    <div></div>
+    <div class="bottom"></div>
   </section>
-  <section>
-    <div></div>
-    <div class="middle"></div>
-    <div></div>
-  </section>
-  <section>
-    <div></div>
-    <div class="top"></div>
-    <div></div>
-  </section>
-  </article>
-  <style>
-  html{
-    background: #35312F
-  }
-    article{
-      background: #35312F;
+  <div></div>
+</article>
+<section>
+  <div></div>
+  <div class="middle"></div>
+  <div></div>
+</section>
+<section>
+  <div></div>
+  <div class="top"></div>
+  <div></div>
+</section>
+
+<style>
+  article {
+    background: #35312f;
     display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      height: 100%
-    }
-  
-    section{
-      display: flex;
-      gap: 16px
-    }
-    div {
-      width: 56px;
-      height: 56px;
-      background: #F3AC3C;
-      position:relative
-    }
-    .middle::after, .middle::before{
-      content: "";
-      position: absolute;
-      left: -16px;
-      width: 16px;
-      height: 56px;
-      background: #F3AC3C;
-    }
-    .middle::before{
-      left: unset;
-      right: -16px;
-    }
-      .bottom::after{
-            content: "";
-      position: absolute;
-      bottom: -16px;
-      width: 56px;
-      height: 16px;
-      background: #F3AC3C;
-      }
-  
-        .top::after{
-            content: "";
-      position: absolute;
-      top: -16px;
-      width: 56px;
-      height: 16px;
-      background: #F3AC3C;
-      }
-  </style>
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+  }
+
+  section {
+    display: flex;
+    gap: 16px;
+  }
+  div {
+    width: 56px;
+    height: 56px;
+    background: #f3ac3c;
+    position: relative;
+  }
+  .middle::after,
+  .middle::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    width: 16px;
+    height: 56px;
+    background: #f3ac3c;
+  }
+  .middle::before {
+    left: unset;
+    right: -16px;
+  }
+  .bottom::after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    width: 56px;
+    height: 16px;
+    background: #f3ac3c;
+  }
+
+  .top::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    width: 56px;
+    height: 16px;
+    background: #f3ac3c;
+  }
+</style>

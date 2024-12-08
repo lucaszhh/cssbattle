@@ -14,8 +14,8 @@
 
 <style is:global>
 	* {
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 		box-sizing: border-box;
 	}
 
@@ -25,17 +25,15 @@
 		--border: 1px solid #eaeaea;
 	}
 
-	html{
+
+	
+	body {
 		background: radial-gradient(
 			125% 125% at 50% 10%,
 			var(--bg) 40%,
 			var(--primary) 100%
-		);
-		height: 100%;
-	}
-
-	body {
-
+		) ;
+		min-height: 100vh;
 		font-family:
 			system-ui,
 			-apple-system,

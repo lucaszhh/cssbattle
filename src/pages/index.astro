@@ -8,6 +8,7 @@ import Dec5 from "../targets/Dec5.astro";
 import Dec6 from "../targets/Dec6.astro";
 import Coming from "../targets/Coming.astro";
 import Dec7 from "../targets/Dec7.astro";
+import Dec8 from "../targets/Dec8.astro";
 
 const listTargets = [
 	{
@@ -35,9 +36,13 @@ const listTargets = [
 		Desing: Dec7,
 	},
 	{
+		title: "Diciembre 8",
+		Desing: Dec8,
+	},
+	{
 		title: "Coming soon",
-		Desing: Coming
-	}
+		Desing: Coming,
+	},
 ];
 ---
 
@@ -55,15 +60,24 @@ const listTargets = [
 </Layout>
 
 <style>
-	main{
-		max-width: 1700px;
-		margin: 20px auto;
+	main {
+		max-width: 1860px;
+		margin: 0px auto;
 		padding: 20px;
 	}
+	
 	section {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 20px;
 		padding: 20px 0px;
+	}
+
+	@media (max-width: 768px) {
+		section {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 </style>

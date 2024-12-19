@@ -1,0 +1,33 @@
+<div>
+    <p id="a"></p>
+    <p></p>
+</div>
+<style>
+    div {
+        background: #35312f;
+        height: 100%;
+        position: relative;
+    }
+    p,
+    p::after,
+    p::before {
+        width: 40px;
+        height: 40px;
+        background: #cf81af;
+        position: absolute;
+        top: 130px;
+        left: 180px;
+    }
+    p::after,
+    p::before {
+        content: "";
+        top: 0px;
+        left: 60px;
+    }
+    p::before {
+        left: -60px;
+    }
+    #a {
+        rotate: 90deg;
+    }
+</style>

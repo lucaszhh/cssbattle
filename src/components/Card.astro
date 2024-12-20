@@ -1,18 +1,35 @@
 ---
-const { title, Desing } = Astro.props;
+const { title, Desing, characters } = Astro.props;
 ---
 
 <div class="card shadow">
     <div class="image">
         <Desing />
     </div>
-    <h2>{title}</h2>
+    <div class="content">
+        <p>Caracteres: <span>{characters}</span></p>
+        <h2>{title}</h2>
+    </div>
 </div>
 
 <style>
-    h2{
-        text-align: end;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
         padding-top: 20px;
+    }
+    h2,
+    p {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+        color: #63e;
+    }
+    span {
+        color: #2c2c2c;
     }
     .image {
         aspect-ratio: 4/3;
@@ -41,4 +58,5 @@ const { title, Desing } = Astro.props;
             0 20px 15px rgb(0 0 0 / 0.06),
             0 8px 6px rgb(0 0 0 / 0.15);
     }
+    
 </style>

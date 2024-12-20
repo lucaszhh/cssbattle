@@ -7,7 +7,7 @@ const { title, Desing, characters } = Astro.props;
         <Desing />
     </div>
     <div class="content">
-        <p>Caracteres: <span>{characters}</span></p>
+        {characters && <p>Caracteres: <span>{characters}</span></p>}
         <h2>{title}</h2>
     </div>
 </div>

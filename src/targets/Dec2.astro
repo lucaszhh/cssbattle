@@ -1,0 +1,58 @@
+<section>
+    <div><p></p><p id="b"></p><p id="c"></p></div><div id="a">
+        <p></p><p id="b"></p><p id="c"></p>
+    </div><div id="d"><p></p><p id="b"></p><p id="c"></p></div><div id="e">
+        <p></p><p id="b"></p><p id="c"></p>
+    </div><h1></h1><h1 id="z"></h1>
+</section>
+
+<style>
+    section {
+        background: #e0e7ff;
+        position: relative;
+        height: 100%;
+    }
+    p {
+        height: 60px;
+        width: 20px;
+        background: #d96c7b;
+        position: relative;
+    }
+    div {
+        display: flex;
+        position: absolute;
+        top: 80px;
+        left: 130px;
+    }
+    #b {
+        top: -20px;
+    }
+    #c {
+        top: -40px;
+    }
+    #a {
+        rotate: -180deg;
+        left: 210px;
+        top: 160px;
+    }
+    #d {
+        transform: scaleX(-1);
+        left: 210px;
+    }
+    #e {
+        transform: scaleY(-1);
+        top: 160px;
+    }
+    h1,
+    h1:after {
+        width: 20px;
+        height: 60px;
+        background: #0b2429;
+        top: 120px;
+        position: absolute;
+        left: 190px;
+    }
+    #z {
+        rotate: 90deg;
+    }
+</style>

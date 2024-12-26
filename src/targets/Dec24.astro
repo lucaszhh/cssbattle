@@ -1,0 +1,35 @@
+<div>
+    <p></p>
+    <p id="a"></p>
+</div>
+<style>
+    div {
+        background: #6d62ba;
+        height: 100%;
+        position: relative;
+    }
+    p {
+        width: 90px;
+        height: 90px;
+        background: #a1e6e4;
+        border-radius: 50%;
+        position: absolute;
+        top: 105px;
+        left: 155px;
+    }
+    p:after,
+    p:before {
+        content: "";
+        width: 30px;
+        height: 90px;
+        position: absolute;
+        left: -60px;
+        background: #a1e6e4;
+    }
+    p:after {
+        left: 120px;
+    }
+    #a {
+        rotate: 90deg;
+    }
+</style>

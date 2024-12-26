@@ -24,8 +24,11 @@ import Dec18 from "../targets/Dec18.astro"
 import Dec19 from "../targets/Dec19.astro"
 import Dec20 from "../targets/Dec20.astro"
 import Dec21 from "../targets/Dec21.astro"
-import Dec23 from "../targets/Dec23.astro"
 import Dec22 from "../targets/Dec22.astro"
+import Dec23 from "../targets/Dec23.astro"
+import Dec24 from "../targets/Dec24.astro"
+import Dec25 from "../targets/Dec25.astro"
+import Dec26 from "../targets/Dec26.astro"
 
 const listTargets = [
 /* 	{
@@ -149,6 +152,21 @@ const listTargets = [
 		Desing: Dec23,
 	},
 	{
+		title: "Diciembre 24",
+		characters: 301,
+		Desing: Dec24,
+	},
+	{
+		title: "Diciembre 25",
+		characters: 407,
+		Desing: Dec25,
+	},
+	{
+		title: "Diciembre 26",
+		characters: 248,
+		Desing: Dec26,
+	},
+	{
 		title: "Coming soon",
 		Desing: Coming,
 		
@@ -158,7 +176,7 @@ const listTargets = [
 
 <Layout>
 	<main>
-		<h1>CSS Battle</h1>
+		<h1>Adviento Diciembre</h1>
 		<section>
 			{
 				listTargets.map((target, index) => (
@@ -181,6 +199,10 @@ const listTargets = [
 		flex-wrap: wrap;
 		gap: 20px;
 		padding: 20px 0px;
+	}
+	h1{
+		text-align: center;
+		font-size: 50px;
 	}
 
 	@media (max-width: 768px) {
